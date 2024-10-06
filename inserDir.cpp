@@ -2,11 +2,11 @@
 using namespace std;
 void inserDir(int arr[], int n)
 {
-    for(int i=2; i<n; i++)
+    for(int i=1; i<n; i++)
     {
         int aux=arr[i];
         int k=i-1;
-        while(k>0 && aux<arr[k])
+        while(k>=0 && aux<arr[k])
         {
             arr[k+1]=arr[k];
             k--;
