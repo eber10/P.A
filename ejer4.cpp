@@ -22,11 +22,11 @@ int main()
         izq++;
         for(int i=izq; i<der; i++)
         {
-            if(arr[i-1]>arr[i])
+            if(arr[i]>arr[i+1])
             {
-                int aux=arr[i-1];
-                arr[i-1]=arr[i];
-                arr[i]=aux;
+                int aux=arr[i];
+                arr[i]=arr[i+1];
+                arr[i+1]=aux;
                 
             }
         }
